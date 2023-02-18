@@ -1,43 +1,106 @@
 @media screen and (min-width: 480px) {
-	.container{
-    max-width: 428px;
+	.container {
+		max-width: 428px;
 	}
 
-    
+    .features-item {
+        /* margin-bottom: 72px; */
     }
 
 
-@media screen and (max-width: 480px) {
+	.features-icons {
+		display: none;
+	}
+
+	.footer {
+		display: flex;
+		align-items: center;
+	}
+	.user-mail-subscribe {
+		width: 396px;
+	}
 
     .hero {
-
-
+    
+        background-image: linear-gradient(
+			rgba(46, 47, 66, 0.7),
+			rgba(46, 47, 66, 0.7)
+		),
+		url(/images/herobackground-tab.jpg);
     }
-    .features-icons {
-        display: none;
-}
-
-
-.header-list {
-
-    display: none;
-}
-
-.address-list {
-
-    display: none;
-}
-
-.hero-title {
-    max-width: 318px;
-
-}
-
 
 }
 
 @media screen and (min-width: 320px) {
-	.hero-title{
-    max-width: 318px;
+	.container {
+		max-width: 428px;
 	}
+    .features-suptitle  {
+        text-align: center;
+            }
+
+	.hero {
+		padding-top: 112px;
+		padding-bottom: 112px;
+	}
+	.hero-title {
+		max-width: 318px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: calc(40 / 36);
+		text-transform: capitalize;
+		align-items: center;
+		color: var(--sup-white-color);
+		margin-bottom: 72px;
+	}
+    .team-list {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
+
+
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 72px;
+	}
+	.footer-logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social-media-header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-subscribe-label {
+		display: flex;
+		justify-content: center;
+    
+	}
+
+    .footer-wraper {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.header-list {
+		display: none;
+	}
+	.address {
+		display: none;
+	}
+    .features-item {
+        margin-bottom: 72px;
+    }
+}

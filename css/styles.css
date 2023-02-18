@@ -127,7 +127,7 @@ button {
 
 	display: flex;
 	margin-left: 76px;
-	display: none;
+
 }
 
 .header-item {
@@ -160,10 +160,12 @@ button {
 .address {
 	font-style: normal;
 	margin-left: auto;
-	display: none;
+	
+	
 }
 
 .address-list {
+	flex-wrap: wrap;
 	display: flex;
 }
 .address-item {
@@ -193,24 +195,19 @@ button {
 		url(/images/herobackground-mob.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 428px, 428px, cover;
-	align-items: center;
-	padding-top: 96px;
-	padding-bottom: 96px;
-	display: flex;
+	background-size: cover;
+	/* align-items: center; */
 }
 .hero-title {
 	font-size: 36px;
 	line-height: 1.11;
 	letter-spacing: 0.02em;
-	/* width: 318px; */
+	
 	color: var(--sup-white-color);
 
-	margin-bottom: 72px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 .hero-btn {
@@ -451,15 +448,13 @@ button {
 
 }
 
-
-
 .features-list {
 
-	/* column-gap: 24px; */
+	column-gap: 24px;
+	row-gap: 72px;
 }
 
 .features-item {
-	margin-bottom: 72px;
 /* width: 396px; */
 	/* width: calc((100% - 72px) / 4); */
 }
@@ -474,7 +469,7 @@ button {
 	line-height: 1.11;
 	letter-spacing: 0.02em;
 	color: var(--sup-dark-color);
-	text-align: center;
+	/* text-align: center; */
 
 	margin-bottom: 8px;
 }
@@ -500,7 +495,7 @@ button {
 .images {
 	min-width: 412px;
 	padding-bottom: 120px;
-	display: none;
+
 }
 
 .images-title {
@@ -550,7 +545,7 @@ button {
 }
 .team-list {
 	/* display: flex; */
-	max-width: 264px;
+	/* max-width: 264px; */
 	
 }
 .team-item {
@@ -560,6 +555,7 @@ button {
 		0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 	margin-bottom: 72px;
+	/* margin-bottom: 0; */
 }
 
 .team-caption {
@@ -569,14 +565,14 @@ button {
 	text-align: center;
 	transition: bottom 0.5s ease;
 	align-items: center; */
-	max-width: 264px;
+	width: 264px;
 	align-items: center;
 
 
 }
-
-/* .team-item:last-child {
-	margin-right: 0;
+/* 
+.team-item:last-child {
+	margin-bottom: 0;
 } */
 
 .team-suptitle {
@@ -664,9 +660,6 @@ button {
 
 .customers-icon-item {
 	box-sizing: border-box;
-	margin-bottom: 72px;
-
-	/* margin-right: 24px; */
 }
 
 .customers-icon-item:last-child {
@@ -756,7 +749,7 @@ button {
 	letter-spacing: 0.02em;
 	color: var(--sup-white-color);
 	margin-bottom: 16px;
-	margin-top: 72px;
+	
 }
 
 .social-media-list {
@@ -798,8 +791,9 @@ button {
 	/* justify-content: center; */
 }
 .footer-wraper {
-	/* display: flex; */
-	align-items: center;
+	display: flex;
+	/* align-items: center;
+	flex-direction: column; */
 	/* gap: 24px; */
 }
 .user-mail-subscribe {
@@ -809,7 +803,7 @@ button {
 	border-radius: 4px;
 	padding: 8px 0 8px 16px;
 	height: 40px;
-	width: 264px;
+	width: 300px;
 	color: #ffffff;
 	margin-bottom: 16px;
 }
@@ -828,13 +822,13 @@ button {
 	letter-spacing: 0.02em;
 	color: #ffffff;
 	margin-bottom: 16px;
-	margin-top: 72px;
+	
 }
 .subscribe-btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-self: end;
+	/* align-self: end; */
 	max-height: 40px;
 	gap: 16px;
 	padding: 8px 24px;
