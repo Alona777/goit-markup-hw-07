@@ -1,0 +1,43 @@
+@media screen and (min-width: 480px) {
+	.container{
+    max-width: 428px;
+	}
+
+    
+    }
+
+
+@media screen and (max-width: 480px) {
+
+    .hero {
+
+
+    }
+    .features-icons {
+        display: none;
+}
+
+
+.header-list {
+
+    display: none;
+}
+
+.address-list {
+
+    display: none;
+}
+
+.hero-title {
+    max-width: 318px;
+
+}
+
+
+}
+
+@media screen and (min-width: 320px) {
+	.hero-title{
+    max-width: 318px;
+	}
+    }
