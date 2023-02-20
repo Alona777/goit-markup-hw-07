@@ -108,5 +108,8 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+.header-burger-btn-svg {
+    fill: var(--sup-dark-color);
+}
 }
 
