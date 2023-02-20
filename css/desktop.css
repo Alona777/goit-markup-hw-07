@@ -7,7 +7,7 @@
 	.header {
 		width: 100%;
 		padding-top: 24px;
-		padding-bottom: 24px;
+		padding-bottom: 28px;
 		box-sizing: border-box;
 	}
 
@@ -23,9 +23,8 @@
 	}
 
 	.current::after {
-		top: 47px;
+		top: 49px;
 	}
-
 	.hero {
 		padding-top: 188px;
 		padding-bottom: 188px;

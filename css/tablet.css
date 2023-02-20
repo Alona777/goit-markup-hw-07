@@ -15,9 +15,7 @@
 	.header {
 		padding-bottom: 10px;
 	}
-	.header-container {
-		align-items: start;
-	}
+
 	.header-list {
 		margin-left: 120px;
 	}
@@ -49,7 +47,7 @@
 
 	.current::after {
 		content: "";
-		top: 45px;
+		top: 37px;
 	}
 
 	.hero-title {
