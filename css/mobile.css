@@ -3,14 +3,14 @@
 		max-width: 428px;
 	}
 
-    .features-item {
-        /* margin-bottom: 72px; */
-    }
-
-
-	.features-icons {
-		display: none;
+	.features-item {
+		/* margin-bottom: 72px; */
 	}
+
+	.features-list {
+	}
+
+
 
 	.footer {
 		display: flex;
@@ -20,30 +20,21 @@
 		width: 396px;
 	}
 
-    .hero {
-    
-        background-image: linear-gradient(
-			rgba(46, 47, 66, 0.7),
-			rgba(46, 47, 66, 0.7)
-		),
-		url(/images/herobackground-tab.jpg);
-    }
-
 }
 
 @media screen and (min-width: 320px) {
-	.container {
-		max-width: 428px;
+
+	.features-suptitle {
+		text-align: center;
 	}
-    .features-suptitle  {
-        text-align: center;
-            }
 
 	.hero {
-		padding-top: 112px;
-		padding-bottom: 112px;
+
+		background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/herobackground-mob.jpg);
+		background-size: 428px, 428px;
 	}
 	.hero-title {
+
 		max-width: 318px;
 		font-weight: 700;
 		font-size: 36px;
@@ -51,15 +42,44 @@
 		text-transform: capitalize;
 		align-items: center;
 		color: var(--sup-white-color);
+		margin: 0 auto 72px auto;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+	.team-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+
+}
+
+@media screen and (min-width: 429px) {
+.hero {
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/herobackground-tab.jpg);
+    background-size: 768px, 768px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+	.header-list {
+		display: none;
+	}
+	.address {
+		display: none;
+	}
+	.features-item {
 		margin-bottom: 72px;
 	}
-    .team-list {
-        display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
 
-
+	.filter-list {
+		justify-content: start;
+	}
 
 	.footer-container {
 		display: flex;
@@ -81,26 +101,12 @@
 	.footer-subscribe-label {
 		display: flex;
 		justify-content: center;
-    
 	}
 
-    .footer-wraper {
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
+	.footer-wraper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
-@media screen and (max-width: 767px) {
-	.header-list {
-		display: none;
-	}
-	.address {
-		display: none;
-	}
-    .features-item {
-        margin-bottom: 72px;
-    }
-}
