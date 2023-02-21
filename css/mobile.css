@@ -10,8 +10,6 @@
 	.features-list {
 	}
 
-
-
 	.footer {
 		display: flex;
 		align-items: center;
@@ -19,51 +17,76 @@
 	.user-mail-subscribe {
 		width: 396px;
 	}
-
 }
 
 @media screen and (min-width: 320px) {
-
 	.features-suptitle {
 		text-align: center;
 	}
 
 	.hero {
-
-		background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/herobackground-mob.jpg);
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/herobackground-mob.jpg);
 		background-size: 428px, 428px;
 	}
+
 	.hero-title {
-
 		max-width: 318px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    text-align: center;
-    text-transform: capitalize;
-    color: #ffffff;
-    margin: 0 auto 72px auto;
-	letter-spacing: normal;
-
+		font-weight: 700;
+		font-size: 36px;
+		line-height: calc(40 / 36);
+		text-align: center;
+		text-transform: capitalize;
+		color: #ffffff;
+		margin: 0 auto 72px auto;
+		letter-spacing: normal;
 	}
 
-	
 	.team-list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+}
 
-
+@media (min-device-pixel-ratio: 2) and (min-width: 320px),
+	(min-resolution: 192dpi) and (min-width: 320px),
+	(min-resolution: 2dppx) and (min-width: 320px) {
+	.hero {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/herobackground-mob-2x.jpg);
+	}
 }
 
 @media screen and (min-width: 429px) {
-.hero {
-    background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/herobackground-tab.jpg);
-    background-size: 768px, 768px;
+	.hero {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/herobackground-tab.jpg);
+		background-size: 768px, 768px;
+	}
 }
 
+@media (min-device-pixel-ratio: 2) and (min-width: 429px),
+	(min-resolution: 192dpi) and (min-width: 429px),
+	(min-resolution: 2dppx) and (min-width: 429px) {
+	.hero {
+		background-image: linear-gradient(
+				rgba(46, 47, 66, 0.7),
+				rgba(46, 47, 66, 0.7)
+			),
+			url(../images/herobackground-tab-2x.jpg);
+	}
 }
+
 
 @media screen and (max-width: 767px) {
 	.header-list {
@@ -107,8 +130,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-.header-burger-btn-svg {
-    stroke: var(--sup-dark-color);
+	.header-burger-btn-svg {
+		stroke: var(--sup-dark-color);
+	}
 }
-}
-
